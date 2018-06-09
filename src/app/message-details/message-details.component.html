@@ -1,0 +1,21 @@
+<div class="card col-6" *ngIf="message">
+
+  <div class="card-title">
+
+    Wiadomość o numerze {{message.id}}
+
+  </div>
+
+  <div class="card-body">
+
+    {{message.content}}
+
+  </div>
+
+  <div *ngIf="message.author" class="card-footer">
+
+    Author: {{message.author}}
+
+  </div>
+
+</div>
